@@ -1,0 +1,58 @@
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.newHereContainer {
+    width: var(--w100);
+    text-align: center;
+}
+
+.newHere {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--orange-color-1);
+}
+
+.registerBtn {
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+    height: 2.7rem;
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--black-background);
+    border: 1px solid var(--main-text-color);
+}
+
+.newHere::before,
+.newHere::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: .2rem;
+    background-color: var(--orange-color-1);
+}
+.newHere::before {
+    left: 0;
+}
+
+.newHere::after {
+    right: 0;
+}
+
+@media(min-width: 768px) {
+    .registerBtn:hover {
+        background-color: var(--white-background);
+        color: var(--black-color);
+    }
+}

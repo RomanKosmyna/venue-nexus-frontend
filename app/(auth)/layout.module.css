@@ -1,0 +1,25 @@
+.main {
+    background-color: var(--main-background);
+    width: var(--w100);
+    height: var(--v100);
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 768px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main {
+        width: 70%;
+    }
+}
+
+@media(min-width: 1400px) {
+    .main {
+        width: 45%;
+    }
+}
