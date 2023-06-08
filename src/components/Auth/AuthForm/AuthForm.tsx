@@ -1,20 +1,27 @@
 "use client";
 
 import React, {type FC, useState} from "react";
+import {apiService} from "@/src/services";
+import {useRouter} from "next/navigation";
+import { setCookie } from "cookies-next";
+import {urls} from "@/src/configs";
 
 import styles from "./AuthForm.module.css";
 
 interface IProps {
     buttonText: string;
     route?: string;
+    api: "login" | "registration";
 }
 
-const AuthForm: FC<IProps> = ({ buttonText, route }) => {
+const AuthForm: FC<IProps> = ({buttonText, api}) => {
+    const endpoint = `${apiService}${api === "login" ? urls.auth.login : urls.auth.registration}`;
     const [target, setTarget] = useState({
         email: "",
         username: "",
         password: "",
     });
+    const router = useRouter();
 
     const inputFocused = (inputId: string) => {
         setTarget(prevTarget => ({...prevTarget, [inputId]: inputId}));
@@ -24,17 +31,42 @@ const AuthForm: FC<IProps> = ({ buttonText, route }) => {
         const field = el.target.id;
 
         if (el.target.value.length === 0) {
-            setTarget(prevTarget => ({...prevTarget,[field]: ""}));
+            setTarget(prevTarget => ({...prevTarget, [field]: ""}));
         }
     };
 
-    // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    //     event.preventDefault();
-    //
-    // };
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
+        event.preventDefault();
+
+        const data = {
+            email: (event.target as HTMLFormElement).email.value,
+            username: (event.target as HTMLFormElement).username.value,
+            password: (event.target as HTMLFormElement).password.value,
+        }
+
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            if (response.status === 200) {
+                const {accessToken, refreshToken} = await response.json();
+                setCookie("accessToken", accessToken);
+                setCookie("refreshToken", refreshToken);
+                router.push("/");
+            } else if (response.status === 201) {
+                router.push("/login");
+            }
+        } catch (e) {
+            console.log(e.message)
+        }
+    };
 
     return (
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.inputContainer}>
                 <label
                     htmlFor="email"

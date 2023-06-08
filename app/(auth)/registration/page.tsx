@@ -10,11 +10,14 @@ export default function Registration() {
         <div className={styles.page}>
             <AuthWebsiteName/>
             <AuthHeadingAbout heading={"Register Account"}/>
-            <AuthForm buttonText={"Register"}/>
+            <AuthForm
+                buttonText={"Register"}
+                api={"registration"}
+            />
             <AuthPageRedirect
-            link={"login"}
-            linkText={"Log In"}
-            status={"Account holder?"}
+                link={"login"}
+                linkText={"Log In"}
+                status={"Account holder?"}
             />
         </div>
     )
