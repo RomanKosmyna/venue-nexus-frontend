@@ -60,7 +60,7 @@ const AuthForm: FC<IProps> = ({buttonText, api}) => {
             } else if (response.status === 201) {
                 router.push("/login");
             }
-        } catch (error) {
+        } catch (error: Error) {
             console.log(error.message)
         }
     };
