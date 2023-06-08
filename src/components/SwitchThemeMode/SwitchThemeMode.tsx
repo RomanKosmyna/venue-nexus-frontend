@@ -52,7 +52,7 @@ const MaterialUISwitch = styled(Switch)(({theme}) => ({
 
 export default function SwitchThemeMode() {
     const dispatch = useAppDispatch();
-    const {toggleThemeMode} = useAppSelector(state => state.toggleReducer);
+    const {toggleThemeMode}: { toggleThemeMode: boolean } = useAppSelector(state => state.toggleReducer);
 
     const toggleTheme = () => {
         return dispatch(toggleActions.toggleThemeMode(!toggleThemeMode));

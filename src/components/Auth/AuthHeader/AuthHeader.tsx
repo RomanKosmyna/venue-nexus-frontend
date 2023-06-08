@@ -7,7 +7,7 @@ import styles from "./AuthHeader.module.css";
 import SwitchThemeMode from "@/src/components/SwitchThemeMode/SwitchThemeMode";
 
 const AuthHeader = () => {
-    const {toggleThemeMode} = useAppSelector(state => state.toggleReducer);
+    const {toggleThemeMode}: { toggleThemeMode: boolean } = useAppSelector(state => state.toggleReducer);
 
     return (
         <header className={styles.authHeader}>
