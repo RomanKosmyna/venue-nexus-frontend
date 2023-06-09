@@ -84,7 +84,7 @@ const AuthForm: FC<IProps> = ({buttonText, api}) => {
                        }}
                        required={true}
                        pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}"
-                       title="Email should follow and example: example@domain.com"
+                       title="Email should follow an example: example@domain.com"
                 />
             </div>
             <div className={styles.inputContainer}>

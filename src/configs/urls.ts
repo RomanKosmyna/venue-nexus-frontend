@@ -1,7 +1,8 @@
 const urls = {
     auth: {
-        login: "/login",
-        registration: "/registration",
+        login: "/auth/login",
+        registration: "/auth/registration",
+        validateAccessToken: (token: string) => `/auth/validateAccessToken/${token}`
     }
 }
 
