@@ -27,6 +27,9 @@ const MobileNavigationContainer = () => {
                     <Link href={"/dashboard"}>Dashboard</Link>
                 </li>
                 <li className={styles.mobNavListItem}>
+                    <Link href={"/settings"}>Settings</Link>
+                </li>
+                <li className={styles.mobNavListItem}>
                     <button onClick={closeMenu}>Home</button>
                 </li>
                 <li className={styles.mobNavListItem}>
@@ -41,6 +44,15 @@ const MobileNavigationContainer = () => {
                 </li>
                 <li className={styles.mobNavListItem}>
                     <LogOut/>
+                </li>
+            </ul>
+            <h4 className={styles.h4}>Resources</h4>
+            <ul className={styles.mobMenuList}>
+                <li className={styles.mobNavListItem}>
+                    <Link href={"/help"}>Help</Link>
+                </li>
+                <li className={styles.mobNavListItem}>
+                    <Link href={"/Documentation"}>Documentation</Link>
                 </li>
             </ul>
         </nav>

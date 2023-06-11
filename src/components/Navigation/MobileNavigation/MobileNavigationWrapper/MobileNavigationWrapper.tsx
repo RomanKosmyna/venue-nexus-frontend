@@ -18,9 +18,9 @@ const MobileNavigationWrapper = () => {
     },[innerWidth, toggleNavigationMenu])
 
     return (
-        <div>
+        <>
             {(innerWidth < 768 && toggleNavigationMenu) ? <MobileNavigationContainer/> : null}
-        </div>
+        </>
     );
 };
 

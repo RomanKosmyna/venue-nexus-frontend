@@ -15,7 +15,12 @@ const ToggleNavigation = () => {
 
     return (
         <>
-            <button className={styles.toggleNavigation} onClick={toggleNavigation}>
+            <button
+                title={"toggle mobile navigation menu"}
+                type={"button"}
+                className={styles.toggleNavigation}
+                onClick={toggleNavigation}
+            >
                 <span className={`${styles.stripe} ${toggleNavigationMenu ? styles.move : ""}`}></span>
             </button>
         </>
