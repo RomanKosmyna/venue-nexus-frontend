@@ -60,13 +60,19 @@ const AuthForm: FC<IProps> = ({buttonText, api}) => {
             } else if (response.status === 201) {
                 router.push("/login");
             }
-        } catch (error: Error) {
+        } catch (error: unknown) {
             console.log(error.message)
         }
     };
 
+    const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        void handleSubmit(event);
+    };
+
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={styles.form}
+              onSubmit={handleFormSubmit}>
             <div className={styles.inputContainer}>
                 <label
                     htmlFor="email"
