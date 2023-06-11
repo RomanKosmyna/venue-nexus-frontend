@@ -1,0 +1,10 @@
+.header {
+    width: var(--w100);
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    height: 4rem;
+    box-shadow: inset 0 -1px var(--box-shadow-color-section);
+    justify-content: space-between;
+    padding: 0 var(--padding-gap-1);
+}

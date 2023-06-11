@@ -1,0 +1,22 @@
+.userDashInfo {
+    width: var(--w100);
+    height: var(--h100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userEmail {
+    color: var(--main-text-color);
+}
+
+.userAvatar {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.userAvatar > img {
+    border-radius: inherit;
+}

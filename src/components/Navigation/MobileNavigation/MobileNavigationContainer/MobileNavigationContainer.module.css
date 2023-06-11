@@ -1,0 +1,46 @@
+.mobMenuWrapper {
+    color: white;
+    background-color: var(--main-background);
+    flex-grow: 1;
+    padding: 0 var(--padding-gap-1) var(--padding-gap-1) var(--padding-gap-1);
+}
+
+.mobMenuList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobNavListItem {
+    display: flex;
+    align-items: center;
+    width: var(--w100);
+    height: 54px;
+    border-bottom: 1px solid var(--mobile-menu-list-border);
+    color: var(--mobile-menu-list-text-color);
+    font-size: 1rem;
+    user-select: none;
+}
+
+.mobNavListItem > button {
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.mobNavListItem > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobNavListItem > a:visited {
+    color: inherit;
+}
+
+.themeSwitcher {
+    display: flex;
+    justify-content: space-between;
+}

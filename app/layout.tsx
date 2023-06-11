@@ -1,7 +1,7 @@
 import {Roboto} from 'next/font/google';
+import Providers from "@/src/redux/providers";
 
 import '../src/styles/globals.css'
-import Providers from "@/src/redux/providers";
 
 export const metadata = {
     title: 'Venue Nexus',

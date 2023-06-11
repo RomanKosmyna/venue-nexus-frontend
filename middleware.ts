@@ -18,7 +18,7 @@ export async function middleware(request: NextRequest) {
                 'Content-Type': 'application/json',
             }
         });
-        // const jsonResponse = await response.json();
+
         if (response.status === 200) {
             return NextResponse.next();
         } else {

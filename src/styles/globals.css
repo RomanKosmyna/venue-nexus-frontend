@@ -3,7 +3,7 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --vh100: vh100;
-  --v100: 100%;
+  --h100: 100%;
   --w100: 100%;
   --main-background: var(--black-background);
   --main-text-color: var(--white-color);
@@ -11,14 +11,24 @@
   --white-background: #fff;
   --black-color: #000;
   --white-color: #fff;
+  --box-shadow-color-section: var(--grey-color-2);
+  --toggle-navigation-btn: var(--grey-color-2);
+  --mobile-menu-list-border: var(--grey-color-2);
+  --mobile-menu-list-text-color: #999;
   --orange-color-1: #f26419;
+  --grey-color-1: #222;
+  --grey-color-2: #333;
   --general-btn-border-color: var(--main-text-color);
   --font-size-3-5: 3.5rem;
+  --padding-gap-1: 1.5rem;
 }
 
 [data-theme = "light"] {
   --main-background: var(--white-background);
   --main-text-color: var(--black-color);
+  --box-shadow-color-section: var(--grey-color-1);
+  --toggle-navigation-btn: var(--grey-color-1);
+  --mobile-menu-list-border: var(--grey-color-1);
 }
 
 * {
