@@ -4,7 +4,7 @@ import {apiService} from "@/src/services";
 import {urls} from "@/src/configs";
 
 export async function middleware(request: NextRequest) {
-    const cookies = request.cookies;
+    const cookies: any = request.cookies;
 
     try {
         const {value} = cookies.get("accessToken");
