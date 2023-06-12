@@ -1,0 +1,98 @@
+.userMenuContainer {
+    position: absolute;
+    right: 0;
+    top: 3.7rem;
+    width: 250px;
+    height: 340px;
+    background-color: var(--main-background);
+    border: 1px solid var(--box-shadow-color-section);
+    border-radius: 8px;
+    color: var(--desktop-nav-link-text-color);
+}
+
+.userDetailsList {
+    width: var(--w100);
+    padding: var(--padding-gap-1);
+    list-style-type: none;
+    color: inherit;
+}
+
+.userDetailsListItem {
+    width: var(--w100);
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--mobile-menu-list-border);
+    box-sizing: border-box;
+}
+
+.userDetailsListItem > .link {
+    width: var(--w100);
+    height: var(--h100);
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.userDetailsListItem > .link::before {
+    width: 100%;
+    height: 55px;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.userDetailsListItem > .link:hover {
+    color: var(--main-text-color);
+}
+
+.userDetailsListItem > .link:hover::before {
+    background-color: var(--grey-color-2);
+}
+
+.userDetailsEmail {
+    color: var(--main-text-color);
+}
+
+.userDetailsListItem > button {
+    width: var(--w100);
+    height: var(--h100);
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.userDetailsListItem > button::before {
+    width: 100%;
+    height: 55px;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.userDetailsListItem > button:hover {
+    color: var(--main-text-color);
+}
+
+.userDetailsListItem > button:hover::before {
+    background-color: var(--grey-color-2);
+}
+
+.themeSwitcher {
+    display: flex;
+    justify-content: space-between;
+}

@@ -7,10 +7,10 @@ import styles from "./ToggleNavigation.module.css";
 
 const ToggleNavigation = () => {
     const dispatch = useAppDispatch();
-    const {toggleNavigationMenu} = useAppSelector(state => state.toggleReducer);
+    const {toggleMobileNavigationMenu} = useAppSelector(state => state.toggleReducer);
 
     const toggleNavigation = () => {
-        dispatch(toggleActions.toggleNavigationMenu(!toggleNavigationMenu));
+        dispatch(toggleActions.toggleMobileNavigationMenu(!toggleMobileNavigationMenu));
     }
 
     return (
@@ -21,7 +21,7 @@ const ToggleNavigation = () => {
                 className={styles.toggleNavigation}
                 onClick={toggleNavigation}
             >
-                <span className={`${styles.stripe} ${toggleNavigationMenu ? styles.move : ""}`}></span>
+                <span className={`${styles.stripe} ${toggleMobileNavigationMenu ? styles.move : ""}`}></span>
             </button>
         </>
     );

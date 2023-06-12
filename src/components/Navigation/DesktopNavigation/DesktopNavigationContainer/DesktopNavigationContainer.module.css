@@ -1,0 +1,29 @@
+.desktopNavContainer {
+    color: var(--desktop-nav-link-text-color);
+    width: 400px;
+    height: var(--h100);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.desktopNavList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.desktopNavListItem {
+    padding: 0 0 0 1rem;
+}
+
+.desktopNavListItem > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.desktopNavListItem > a:hover {
+    color: var(--main-text-color);
+}

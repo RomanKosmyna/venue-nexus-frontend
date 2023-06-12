@@ -1,0 +1,17 @@
+.toggleUserMenu {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    border: unset;
+    background: unset;
+    padding: unset;
+    margin: unset;
+    font: unset;
+    text-align: unset;
+    cursor: pointer;
+}
+
+.toggleUserMenu > img {
+    border-radius: inherit;
+}

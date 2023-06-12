@@ -11,10 +11,10 @@ import UserDashboardInformation from "@/src/components/Navigation/UserDashboardI
 
 const MobileNavigationContainer = () => {
     const dispatch = useAppDispatch();
-    const {toggleNavigationMenu} = useAppSelector(state => state.toggleReducer);
+    const {toggleMobileNavigationMenu} = useAppSelector(state => state.toggleReducer);
 
     const closeMenu = () => {
-        return dispatch(toggleActions.toggleNavigationMenu(!toggleNavigationMenu));
+        return dispatch(toggleActions.toggleMobileNavigationMenu(!toggleMobileNavigationMenu));
     }
 
     return (
@@ -52,7 +52,7 @@ const MobileNavigationContainer = () => {
                     <Link href={"/help"}>Help</Link>
                 </li>
                 <li className={styles.mobNavListItem}>
-                    <Link href={"/Documentation"}>Documentation</Link>
+                    <Link href={"/documentation"}>Documentation</Link>
                 </li>
             </ul>
         </nav>

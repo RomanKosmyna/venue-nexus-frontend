@@ -1,6 +1,6 @@
 .submenu {
     width: var(--w100);
-    height: 3rem;
+    height: 2.5rem;
     box-shadow: inset 0 -1px var(--box-shadow-color-section);
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@
 }
 
 .submenuNavigation > a {
-    padding: 0 1rem;
+    padding-right: 1rem;
     text-decoration: none;
     color: inherit;
     font-weight: 400;

@@ -1,0 +1,27 @@
+.userDashboardInfo {
+    display: flex;
+    color: red;
+
+}
+
+.userAvatar {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.userAvatar > img {
+    border-radius: inherit;
+}
+
+.userUsername {
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    margin-left: 0.6rem;
+}
+
+.userUsername > p {
+    color: inherit;
+}

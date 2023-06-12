@@ -52,8 +52,12 @@ const AuthForm: FC<IProps> = ({buttonText, api}) => {
                 },
                 body: JSON.stringify(data)
             })
+
             if (response.status === 200) {
-                const {accessToken, refreshToken} = await response.json();
+                const {accessToken, refreshToken, user} = await response.json();
+                const userToString = JSON.stringify(user);
+                const encodedUser = btoa(userToString);
+                setCookie("isLoggedIn", encodedUser);
                 setCookie("accessToken", accessToken);
                 setCookie("refreshToken", refreshToken);
                 router.push("/");

@@ -8,6 +8,7 @@
   --main-background: var(--black-background);
   --main-text-color: var(--white-color);
   --black-background: #000;
+  --black-dasboard-background: #111;
   --white-background: #fff;
   --black-color: #000;
   --white-color: #fff;
@@ -16,6 +17,7 @@
   --mobile-menu-list-border: var(--grey-color-2);
   --mobile-menu-list-text-color: #999;
   --submenu-nav-link-text-color: #999;
+  --desktop-nav-link-text-color: #999;
   --orange-color-1: #f26419;
   --grey-color-1: #222;
   --grey-color-2: #333;

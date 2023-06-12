@@ -1,0 +1,7 @@
+.dashboardContainer {
+    max-width: var(--w100);
+    width: var(--w100);
+    padding: 1.5rem var(--padding-gap-1) 0;
+    flex-grow: 1;
+    background-color: var(--black-dasboard-background);
+}

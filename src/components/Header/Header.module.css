@@ -3,7 +3,19 @@
     display: flex;
     align-items: center;
     color: var(--main-text-color);
-    height: 4rem;
+    height: 3.7rem;
     justify-content: space-between;
     padding: 0 var(--padding-gap-1);
+}
+
+.scope {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.span {
+    width: 30px;
+    height: 100%;
+    color: white;
 }

@@ -2,12 +2,14 @@ import {createSlice, type PayloadAction} from "@reduxjs/toolkit";
 
 interface IState {
     toggleThemeMode: boolean;
-    toggleNavigationMenu: boolean;
+    toggleMobileNavigationMenu: boolean;
+    toggleUserMenu: boolean;
 }
 
 const initialState: IState = {
     toggleThemeMode: false,
-    toggleNavigationMenu: false,
+    toggleMobileNavigationMenu: false,
+    toggleUserMenu: false
 };
 
 const toggleSlice = createSlice({
@@ -17,17 +19,21 @@ const toggleSlice = createSlice({
         toggleThemeMode: (state: IState, action: PayloadAction<boolean>) => {
             state.toggleThemeMode = action.payload;
         },
-        toggleNavigationMenu: (state: IState, action: PayloadAction<boolean>) => {
-            state.toggleNavigationMenu = action.payload;
-        }
+        toggleMobileNavigationMenu: (state: IState, action: PayloadAction<boolean>) => {
+            state.toggleMobileNavigationMenu = action.payload;
+        },
+        toggleUserMenu: (state: IState, action: PayloadAction<boolean>) => {
+            state.toggleUserMenu = action.payload;
+        },
     }
 });
 
-const {reducer: toggleReducer, actions: {toggleThemeMode, toggleNavigationMenu}} = toggleSlice;
+const {reducer: toggleReducer, actions: {toggleThemeMode, toggleMobileNavigationMenu, toggleUserMenu}} = toggleSlice;
 
 const toggleActions = {
     toggleThemeMode,
-    toggleNavigationMenu
+    toggleMobileNavigationMenu,
+    toggleUserMenu
 };
 
 export {toggleReducer, toggleActions};

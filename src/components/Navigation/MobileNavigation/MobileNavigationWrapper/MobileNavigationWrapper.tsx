@@ -8,18 +8,18 @@ import {useEffect} from "react";
 
 const MobileNavigationWrapper = () => {
     const dispatch = useAppDispatch();
-    const {toggleNavigationMenu} = useAppSelector(state => state.toggleReducer);
+    const {toggleMobileNavigationMenu} = useAppSelector(state => state.toggleReducer);
     const innerWidth = useWidthTracker();
 
     useEffect(() => {
-        if (innerWidth >= 768 && toggleNavigationMenu) {
-            dispatch(toggleActions.toggleNavigationMenu(false));
+        if (innerWidth >= 768 && toggleMobileNavigationMenu) {
+            dispatch(toggleActions.toggleMobileNavigationMenu(false));
         }
-    },[innerWidth, toggleNavigationMenu])
+    },[innerWidth, toggleMobileNavigationMenu])
 
     return (
         <>
-            {(innerWidth < 768 && toggleNavigationMenu) ? <MobileNavigationContainer/> : null}
+            {(innerWidth < 768 && toggleMobileNavigationMenu) ? <MobileNavigationContainer/> : null}
         </>
     );
 };
