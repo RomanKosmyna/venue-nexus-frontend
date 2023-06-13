@@ -6,6 +6,7 @@
     height: 3.7rem;
     justify-content: space-between;
     padding: 0 var(--padding-gap-1);
+    flex-shrink: 0;
 }
 
 .scope {

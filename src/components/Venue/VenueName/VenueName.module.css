@@ -1,0 +1,9 @@
+.nameContainer {
+    width: var(--w100);
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 3rem;
+}

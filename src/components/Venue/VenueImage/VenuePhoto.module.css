@@ -1,0 +1,13 @@
+.photoContainer {
+    width: var(--w100);
+    height: 300px;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.photo {
+    object-fit: cover;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}

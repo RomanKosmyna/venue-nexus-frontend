@@ -8,13 +8,13 @@ import UserDashboardHeaderInfo from "@/src/components/UserDashboard/UserDashboar
 const Header = () => {
 
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <div className={styles.scope}>
                 <Logo/>
                 <UserDashboardHeaderInfo/>
             </div>
             <ToggleNavigationWrapper/>
-        </div>
+        </header>
     );
 };
 

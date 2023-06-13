@@ -1,0 +1,86 @@
+.venueCard {
+    width: var(--w100);
+    min-height: 220px;
+    height: auto;
+    background-color: var(--main-background);
+    border-radius: 8px;
+    border: 1px solid var(--box-shadow-color-section);
+}
+
+.venueCardDetails {
+    padding: var(--padding-gap-1);
+    width: var(--w100);
+    height: var(--h100);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+.cardTopPart {
+    display: flex;
+}
+
+.venuePhoto {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.venuePhoto > img {
+    object-fit: cover;
+}
+
+.venueName {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.venueHeading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--main-text-color);
+    height: 40%;
+}
+
+.venueSchedule {
+    color: var(--venue-card-info-text-color);
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.cardMidPart {
+    color: var(--venue-card-info-text-color);
+    font-size: 1.2rem;
+
+}
+
+.venueViewButton {
+    margin-top: 1rem;
+}
+
+.venueTagPart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.venuePublishedPart {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--main-text-color);
+    margin-top: 0.5rem;
+}
+
+.publishedText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.publishedDate {
+    font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.venueTag {
+    color: var(--main-text-color);
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+
+.purple {
+    background-color: #8c6bbf;
+}
+/*#b79ced*/
+.green {
+    background-color: #0dbf8e;
+}
+/*#10E5AA*/
+
+.orange {
+    background-color: #a25e1c;
+}
+
+/*#d17724*/
+
+.blue {
+    background-color: #0087b5;
+}
+/*#00abe7*/
