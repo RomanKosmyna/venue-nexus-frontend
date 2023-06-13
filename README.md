@@ -1,4 +1,4 @@
-# spot-finder
+# Venue Nexus
 
 ## Final Okten School project.
 
