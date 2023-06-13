@@ -1,0 +1,13 @@
+.contactContainer {
+    width: var(--w100);
+    margin-top: 0.5rem;
+}
+
+.contactText {
+    font-size: 1.8rem;
+}
+
+.contact {
+    margin-top: 0.3rem;
+    font-size: 1.1rem;
+}

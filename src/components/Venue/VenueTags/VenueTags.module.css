@@ -1,0 +1,7 @@
+.tagContainer {
+    width: var(--w100);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

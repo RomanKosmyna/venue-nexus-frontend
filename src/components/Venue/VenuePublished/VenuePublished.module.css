@@ -1,0 +1,14 @@
+.publishContainer {
+    width: var(--w100);
+    margin: 0.5rem 0;
+}
+
+.publishText {
+    color: var(--orange-color-1);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.publish {
+    color: var(--main-text-color);
+}

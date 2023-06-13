@@ -1,0 +1,12 @@
+.scheduleContainer {
+    width: var(--w100);
+    margin-top: 1rem;
+}
+
+.scheduleText {
+    font-size: 1.8rem;
+}
+
+.schedule {
+    font-size: 1.1rem;
+}

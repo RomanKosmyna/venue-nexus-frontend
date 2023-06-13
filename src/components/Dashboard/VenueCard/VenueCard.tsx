@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import {apiService} from "@/src/services";
-import VenueTag from "@/src/components/Dashboard/VenueTag/VenueTag";
+import VenueTag from "@/src/components/Venue/VenueTag/VenueTag";
 import CardButton from "@/src/components/Dashboard/CardButton/CardButton";
 
 import styles from "./VenueCard.module.css";
